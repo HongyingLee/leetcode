@@ -5,6 +5,15 @@
 # @Name: containsDuplicate
 
 
+def containDup(nums):
+    length = len(nums)
+    length_set = len(set(nums))
+    if length == length_set:
+        return False
+    else:
+        return True
+
+
 def containduplicate(nums):
     ret = 0
     for i in nums:
@@ -15,3 +24,4 @@ def containduplicate(nums):
 if __name__ == "__main__":
     x = [2, 2, 1]
     print(containduplicate(x))
+    print(containDup(x))

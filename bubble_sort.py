@@ -4,7 +4,10 @@
 # @Time: 2019/8/29
 # @Name: bubble_sort
 
-
+"""
+冒泡排序
+每个数都和它右侧的数比较，若当前数大于右侧的数，则交换位置；否则，保持不变；
+"""
 def bubble_sort(sort_list):
     length = len(sort_list)
     for i in range(length - 1):
